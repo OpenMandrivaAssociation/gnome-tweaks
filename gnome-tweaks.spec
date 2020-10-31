@@ -2,7 +2,7 @@
 
 Name:			gnome-tweaks
 Version:		3.34.0
-Release:		3
+Release:		4
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
 License:		GPLv3
@@ -17,6 +17,7 @@ BuildRequires:		pkgconfig(gtk+-3.0)
 BuildRequires:		pkgconfig(python)
 Requires:		python3dist(pygobject)
 Requires:		gnome-shell
+Requires:   gnome-shell-extensions
 
 #Typelib generator is broken. Add here gir package manually.
 Requires: typelib(Soup)

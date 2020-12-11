@@ -1,8 +1,8 @@
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Name:			gnome-tweaks
-Version:		3.34.0
-Release:		4
+Version:		3.34.1
+Release:		1
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
 License:		GPLv3

@@ -1,7 +1,7 @@
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Name:			gnome-tweaks
-Version:		3.34.1
+Version:		40.0
 Release:		1
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
@@ -61,12 +61,13 @@ Features:
 %doc AUTHORS NEWS README.md
 %license LICENSES/*
 %{_bindir}/%{name}
-%{python3_sitelib}/gtweak/
+%{python_sitelib}/gtweak/
 %{_datadir}/applications/org.gnome.tweaks.desktop
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/*tweak*.*
 %{_datadir}/metainfo/org.gnome.tweaks.appdata.xml
 %{_libexecdir}/gnome-tweak-tool-lid-inhibitor
+%{_datadir}/glib-2.0/schemas/*.xml
 
 #--------------------------------------------------------------------
 

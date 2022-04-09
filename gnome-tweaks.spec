@@ -14,6 +14,7 @@ BuildRequires:		gettext
 BuildRequires:		pkgconfig(gsettings-desktop-schemas)
 BuildRequires:		python3dist(pygobject)
 BuildRequires:		pkgconfig(gtk+-3.0)
+BuildRequires:    pkgconfig(libhandy-1)
 BuildRequires:		pkgconfig(python)
 Requires:		python3dist(pygobject)
 Requires:		gnome-shell

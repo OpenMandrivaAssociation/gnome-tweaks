@@ -1,7 +1,7 @@
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Name:			gnome-tweaks
-Version:		40
+Version:		42
 Release:		0.beta.0
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME

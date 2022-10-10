@@ -1,13 +1,13 @@
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Name:			gnome-tweaks
-Version:		42
-Release:		0.beta.0
+Version:		42.beta
+Release:		1
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
 License:		GPLv3
 URL:			https://wiki.gnome.org/GnomeTweakTool
-Source0:		https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.beta.tar.xz
+Source0:		https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:		meson
 BuildRequires:		gettext
@@ -73,7 +73,7 @@ Features:
 #--------------------------------------------------------------------
 
 %prep
-%autosetup -n %{name}-%{version}.beta -p1
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %meson

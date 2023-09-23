@@ -67,7 +67,7 @@ Features:
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/*tweak*.*
 %{_datadir}/metainfo/org.gnome.tweaks.appdata.xml
-%{_libexecdir}/gnome-tweak-tool-lid-inhibitor
+#{_libexecdir}/gnome-tweak-tool-lid-inhibitor
 %{_datadir}/glib-2.0/schemas/*.xml
 
 #--------------------------------------------------------------------

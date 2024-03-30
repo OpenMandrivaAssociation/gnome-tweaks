@@ -1,7 +1,7 @@
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Name:			gnome-tweaks
-Version:		45.1
+Version:		46.0
 Release:		1
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
@@ -13,8 +13,8 @@ BuildRequires:		meson
 BuildRequires:		gettext
 BuildRequires:		pkgconfig(gsettings-desktop-schemas)
 BuildRequires:		python3dist(pygobject)
-BuildRequires:		pkgconfig(gtk+-3.0)
-BuildRequires:    pkgconfig(libhandy-1)
+BuildRequires:		pkgconfig(gtk4)
+BuildRequires:    pkgconfig(libadwaita-1)
 BuildRequires:		pkgconfig(python)
 Requires:		python3dist(pygobject)
 Requires:		gnome-shell

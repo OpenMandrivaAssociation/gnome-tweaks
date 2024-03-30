@@ -13,6 +13,7 @@ BuildRequires:		meson
 BuildRequires:		gettext
 BuildRequires:		pkgconfig(gsettings-desktop-schemas)
 BuildRequires:		python3dist(pygobject)
+BuildRequires:    pkgconfig(pygobject-3.0)
 BuildRequires:		pkgconfig(gtk4)
 BuildRequires:    pkgconfig(libadwaita-1)
 BuildRequires:		pkgconfig(python)

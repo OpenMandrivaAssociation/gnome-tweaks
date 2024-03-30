@@ -16,6 +16,7 @@ BuildRequires:		python3dist(pygobject)
 BuildRequires:		pkgconfig(gtk4)
 BuildRequires:    pkgconfig(libadwaita-1)
 BuildRequires:		pkgconfig(python)
+BuildRequires:    pkgvonfig(gobject-introspection-1.0)
 Requires:		python3dist(pygobject)
 Requires:		gnome-shell
 Requires:   gnome-shell-extensions

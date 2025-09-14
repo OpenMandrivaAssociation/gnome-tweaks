@@ -10,6 +10,7 @@ URL:			https://wiki.gnome.org/GnomeTweakTool
 Source0:		https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires: meson
+BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: pkgconfig(gsettings-desktop-schemas)
 BuildRequires: python3dist(pygobject)

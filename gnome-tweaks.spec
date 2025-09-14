@@ -1,24 +1,24 @@
 %define url_ver %(echo %{version} | cut -d "." -f -2)
 
 Name:			gnome-tweaks
-Version:		46.1
-Release:		3
+Version:		49.0
+Release:		1
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
 License:		GPLv3
 URL:			https://wiki.gnome.org/GnomeTweakTool
 Source0:		https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
-BuildRequires:		meson
-BuildRequires:		gettext
-BuildRequires:		pkgconfig(gsettings-desktop-schemas)
-BuildRequires:		python3dist(pygobject)
-BuildRequires:    pkgconfig(pygobject-3.0)
-BuildRequires:		pkgconfig(gtk4)
-BuildRequires:  pkgconfig(gudev-1.0)
-BuildRequires:    pkgconfig(libadwaita-1)
-BuildRequires:		pkgconfig(python)
-BuildRequires:    pkgconfig(gobject-introspection-1.0)
+BuildRequires: meson
+BuildRequires: gettext
+BuildRequires: pkgconfig(gsettings-desktop-schemas)
+BuildRequires: python3dist(pygobject)
+BuildRequires: pkgconfig(pygobject-3.0)
+BuildRequires: pkgconfig(gtk4)
+BuildRequires: pkgconfig(gudev-1.0)
+BuildRequires: pkgconfig(libadwaita-1)
+BuildRequires: pkgconfig(python)
+BuildRequires: pkgconfig(gobject-introspection-1.0)
 Requires:		python3dist(pygobject)
 Requires:		gnome-shell
 Requires:   gnome-shell-extensions
@@ -70,7 +70,7 @@ Features:
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/*tweak*.*
 %{_datadir}/metainfo/org.gnome.tweaks.appdata.xml
-#{_libexecdir}/gnome-tweak-tool-lid-inhibitor
+%{_datadir}/dbus-1/services/org.gnome.tweaks.service
 %{_datadir}/glib-2.0/schemas/*.xml
 
 #--------------------------------------------------------------------

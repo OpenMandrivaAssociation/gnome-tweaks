@@ -2,7 +2,7 @@
 
 Name:			gnome-tweaks
 Version:		49.0
-Release:		5
+Release:		6
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
 License:		GPLv3

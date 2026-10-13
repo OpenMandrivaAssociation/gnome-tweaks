@@ -2,7 +2,7 @@
 
 Name:			gnome-tweaks
 Version:		49.0
-Release:		6
+Release:		7
 Summary:		Tool to customize advanced GNOME 3 options
 Group:			Graphical desktop/GNOME
 License:		GPLv3
@@ -13,14 +13,14 @@ BuildRequires: meson
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: pkgconfig(gsettings-desktop-schemas)
-BuildRequires: python3dist(pygobject)
+BuildRequires: python%{pyver}dist(pygobject)
 BuildRequires: pkgconfig(pygobject-3.0)
 BuildRequires: pkgconfig(gtk4)
 BuildRequires: pkgconfig(gudev-1.0)
 BuildRequires: pkgconfig(libadwaita-1)
-BuildRequires: pkgconfig(python)
+BuildRequires: pkgconfig(python3)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
-Requires:		python3dist(pygobject)
+Requires:		python%{pyver}dist(pygobject)
 Requires:		gnome-shell
 Requires:   gnome-shell-extensions
 
